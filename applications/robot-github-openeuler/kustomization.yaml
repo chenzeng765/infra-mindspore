@@ -4,6 +4,7 @@ resources:
 - namespace.yaml
 - secrets.yaml
 - cla
+- openeuler-welcome
 commonLabels:
   app: infrastructure-robot-github
 commonAnnotations:

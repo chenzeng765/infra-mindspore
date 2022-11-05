@@ -4,7 +4,7 @@ metadata:
   name: configmap
 data:
   config.yaml: |
-    training_endpoint: http://service-training-center-huaweicloud.xihe-test-v2.svc.cluster.local:8888/api/v1/training
+    training_endpoint: http://service-training-center-huaweicloud.xihe-new.svc.cluster.local:8888/api/v1/training
     mongodb:
       mongodb_conn: "${MONGODB_CONNECTION}"
       mongodb_db: "${MONGODB_NAME}"
@@ -50,7 +50,7 @@ data:
         related_resource: "xihe_related_resource_test"
 
     evaluate:
-      endpoint: http://service-inference-evaluate.xihe-test-v2.svc.cluster.local:8888
+      endpoint: http://service-inference-evaluate.xihe-new.svc.cluster.local:8888
 
     inference:
-      endpoint: http://service-inference-evaluate.xihe-test-v2.svc.cluster.local:8888
+      endpoint: http://service-inference-evaluate.xihe-new.svc.cluster.local:8888

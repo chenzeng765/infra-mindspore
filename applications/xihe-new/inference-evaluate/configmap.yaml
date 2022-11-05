@@ -16,20 +16,20 @@ data:
 
       crd:
         crd_image: swr.cn-north-4.myhuaweicloud.com/opensourceway/mindspore/xihe-inference-evaluate:v1.0.20221102171340
-        crd_namespace: xihe-test-v2
+        crd_namespace: xihe-new
         crd_cpu: 0.5
         crd_memory: 512
 
     evaluate:
       crd:
         crd_image: swr.cn-north-4.myhuaweicloud.com/opensourceway/mindspore/xihe-inference-evaluate:v1.0.20221104110303
-        crd_namespace: xihe-test-v2
+        crd_namespace: xihe-new
         crd_cpu: 0.5
         crd_memory: 512
 
     watch:
-      inference_endpoint: service-internal-server.xihe-test-v2.svc.cluster.local:8888
-      evaluate_endpoint: service-internal-server.xihe-test-v2.svc.cluster.local:8888
+      inference_endpoint: service-internal-server.xihe-new.svc.cluster.local:8888
+      evaluate_endpoint: service-internal-server.xihe-new.svc.cluster.local:8888
 
     k8s:
       kind: CodeServer

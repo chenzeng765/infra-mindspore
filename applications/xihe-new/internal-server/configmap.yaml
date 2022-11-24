@@ -24,6 +24,12 @@ data:
         competition: competition
 
     domain:
+      min_name_length: 3
+      max_name_length: 35
+      max_desc_length: 200
+      min_training_name_length: 1
+      max_training_name_length: 64
+      max_training_desc_length: 256
       covers:
       - "1"
       - "2"

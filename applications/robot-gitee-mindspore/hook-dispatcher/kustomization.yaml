@@ -10,3 +10,6 @@ images:
 - name: swr.cn-north-4.myhuaweicloud.com/opensourceway/robot/robot-gitee
   newName: swr.cn-north-4.myhuaweicloud.com/opensourceway/robot/robot-hook-dispatcher
   newTag: main-db0ce7a
+- name: swr.cn-north-4.myhuaweicloud.com/opensourceway/xihe/xihe
+  newName: swr.cn-north-4.myhuaweicloud.com/opensourceway/robot/robot-hook-dispatcher
+  newTag: main-dc7958c

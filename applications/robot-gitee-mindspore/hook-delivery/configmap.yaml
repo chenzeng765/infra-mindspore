@@ -4,7 +4,6 @@ metadata:
   name: configmap
 data:
   config.yaml: |
-    access:
-      topic: robot-gitee-mindspore
-      user_agent: robot-gitee-mindspore
-      kafka_address: "${KAFKA_ADDRESS}"
+    topic: robot-gitee-mindspore
+    user_agent: robot-gitee-mindspore
+    kafka_address: "${KAFKA_ADDRESS}"

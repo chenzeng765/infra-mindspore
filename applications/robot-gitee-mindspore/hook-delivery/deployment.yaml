@@ -7,7 +7,7 @@ spec:
   template:
     spec:
       containers:
-      - name: hook-dispatcher
+      - name: hook-delivery
         image: swr.cn-north-4.myhuaweicloud.com/opensourceway/robot/robot-gitee:latest
         imagePullPolicy: IfNotPresent
         args:
@@ -38,4 +38,4 @@ spec:
           secretName: secrets
       - name: app-config
         configMap:
-          name: configmap-hook-dispatcher
+          name: configmap-hook-delivery

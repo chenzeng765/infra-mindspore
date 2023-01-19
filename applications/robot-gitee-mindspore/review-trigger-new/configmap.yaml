@@ -18,30 +18,42 @@ data:
       need_welcome: true
       cla_label: "mindspore-cla/yes"
       review:
-        number_of_approvers: 1
         total_number_of_approvers: 1
         total_number_of_reviewers: 1
+        endpoint_to_recommend_reviewer: https://omapi.test.osinfra.cn/query/reviewer/recommend
+
     - repos:
       - mindspore/mindspore
       need_welcome: true
       cla_label: "mindspore-cla/yes"
       labels_for_basic_ci_passed:
+      - ci-compile-passed
       - ci-pipeline-passed
       review:
-        number_of_approvers: 1
         total_number_of_approvers: 2
         total_number_of_reviewers: 1
         endpoint_to_recommend_reviewer: https://omapi.test.osinfra.cn/query/reviewer/recommend
-        
     - repos:
-        - mindspore/graphlearning
+      - mindspore/graphlearning
+      - mindspore/models
+      - mindspore/mindscience
       need_welcome: true
       cla_label: "mindspore-cla/yes"
       labels_for_basic_ci_passed:
-        - ci-pipeline-passed
+      - ci-compile-passed
+      - ci-pipeline-passed
       review:
-        number_of_approvers: 1
         total_number_of_approvers: 2
         total_number_of_reviewers: 2
-        endpoint_to_recommend_reviewer: https://omapi.test.osinfra.cn/query/reviewer/recommend    
-        
+        endpoint_to_recommend_reviewer: https://omapi.test.osinfra.cn/query/reviewer/recommend
+    - repos:
+      - mindspore/vision
+      need_welcome: true
+      cla_label: "mindspore-cla/yes"
+      labels_for_basic_ci_passed:
+      - ci-compile-passed
+      - ci-pipeline-passed
+      review:
+        total_number_of_approvers: 1
+        total_number_of_reviewers: 2
+        endpoint_to_recommend_reviewer: https://omapi.test.osinfra.cn/query/reviewer/recommend

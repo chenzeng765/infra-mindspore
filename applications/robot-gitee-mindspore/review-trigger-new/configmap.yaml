@@ -15,15 +15,29 @@ data:
     config_items:
     - repos:
       - mindspore/docs
+      - mindspore/reinforcement
       need_welcome: true
       cla_label: "mindspore-cla/yes"
       review:
         total_number_of_approvers: 1
         total_number_of_reviewers: 1
         endpoint_to_recommend_reviewer: https://omapi.test.osinfra.cn/query/reviewer/recommend
+    - repos:
+      - mindspore/ms-pipeline
+      - mindspore/darglint
+      - mindspore/contrib
+      - mindspore/topenterprise
+      - mindspore/blog
+      - mindspore/ms-operator
+      need_welcome: true
+      cla_label: "mindspore-cla/yes"
+      review:
+        total_number_of_approvers: 2
+        total_number_of_reviewers: 1
+        endpoint_to_recommend_reviewer: https://omapi.test.osinfra.cn/query/reviewer/recommend
 
     - repos:
-      - mindspore/mindspore
+      - mindspore
       need_welcome: true
       cla_label: "mindspore-cla/yes"
       labels_for_basic_ci_passed:
@@ -31,6 +45,18 @@ data:
       - ci-pipeline-passed
       review:
         total_number_of_approvers: 2
+        total_number_of_reviewers: 1
+        endpoint_to_recommend_reviewer: https://omapi.test.osinfra.cn/query/reviewer/recommend
+    - repos:
+      - mindspore/golden-stick
+      - mindspore/text
+      need_welcome: true
+      cla_label: "mindspore-cla/yes"
+      labels_for_basic_ci_passed:
+      - ci-compile-passed
+      - ci-pipeline-passed
+      review:
+        total_number_of_approvers: 1
         total_number_of_reviewers: 1
         endpoint_to_recommend_reviewer: https://omapi.test.osinfra.cn/query/reviewer/recommend
     - repos:
@@ -48,6 +74,10 @@ data:
         endpoint_to_recommend_reviewer: https://omapi.test.osinfra.cn/query/reviewer/recommend
     - repos:
       - mindspore/vision
+      - mindspore/course
+      - mindspore/federated
+      - mindspore/mindpandas
+      - mindspore/recommender
       need_welcome: true
       cla_label: "mindspore-cla/yes"
       labels_for_basic_ci_passed:

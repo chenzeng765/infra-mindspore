@@ -10,32 +10,10 @@ data:
         - robot-gitee-mindspore-review-trigger-new
         - robot-gitee-mindspore-tide
         - robot-gitee-mindspore-cla
-
-        mindspore/golden-stick:
         - robot-gitee-mindspore-label
         - robot-gitee-mindspore-lifecycle
         - robot-gitee-mindspore-assign
 
-        mindspore/federated:
-        - robot-gitee-mindspore-label
-        - robot-gitee-mindspore-lifecycle
-        - robot-gitee-mindspore-assign
-
-        mindspore/text:
-        - robot-gitee-mindspore-label
-        - robot-gitee-mindspore-lifecycle
-        - robot-gitee-mindspore-assign
-
-        mindspore/mindpandas:
-        - robot-gitee-mindspore-label
-        - robot-gitee-mindspore-lifecycle
-        - robot-gitee-mindspore-assign
-
-        mindspore/recommender:
-        - robot-gitee-mindspore-label
-        - robot-gitee-mindspore-lifecycle
-        - robot-gitee-mindspore-assign
-    
       plugins:
       - name: robot-gitee-mindspore-cla
         endpoint: http://service-cla.robot-gitee-mindspore.svc.cluster.local:8888/gitee-hook

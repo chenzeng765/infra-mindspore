@@ -7,43 +7,46 @@ data:
     access:
       repo_plugins:
         mindspore:
-        - robot-gitee-mindspore-review-trigger-new
-        - robot-gitee-mindspore-tide
-        - robot-gitee-mindspore-cla
-        - robot-gitee-mindspore-label
-        - robot-gitee-mindspore-lifecycle
-        - robot-gitee-mindspore-assign
+        - review-trigger-new
+        - tide
+        - cla
+        - label
+        - lifecycle
+        - assign
+
+        YwHql/test:
+        - test
 
       plugins:
-      - name: robot-gitee-mindspore-cla
+      - name: cla
         endpoint: http://service-cla.robot-gitee-mindspore.svc.cluster.local:8888/gitee-hook
         events:
         - "Merge Request Hook"
         - "Note Hook"
-      - name: robot-gitee-mindspore-label
+      - name: label
         endpoint: http://service-label.robot-gitee-mindspore.svc.cluster.local:8888/gitee-hook
         events:
         - "Merge Request Hook"
         - "Note Hook"
-      - name: robot-gitee-mindspore-tide
+      - name: tide
         endpoint: http://service-tide.robot-gitee-mindspore.svc.cluster.local:8888/gitee-hook
         events:
         - "Merge Request Hook"
         - "Note Hook"
-      - name: robot-gitee-mindspore-lifecycle
+      - name: lifecycle
         endpoint: http://service-lifecycle.robot-gitee-mindspore.svc.cluster.local:8888/gitee-hook
         events:
         - "Note Hook"
-      - name: robot-gitee-mindspore-assign
+      - name: assign
         endpoint: http://service-assign.robot-gitee-mindspore.svc.cluster.local:8888/gitee-hook
         events:
         - "Note Hook"
-      - name: robot-gitee-mindspore-review-trigger-new
+      - name: review-trigger-new
         endpoint: http://service-review-trigger-new.robot-gitee-mindspore.svc.cluster.local:8888/gitee-hook
         events:
         - "Merge Request Hook"
         - "Note Hook"
-      - name: robot-gitee-mindspore-test
+      - name: test
         endpoint: http://service-test.robot-gitee-mindspore.svc.cluster.local:8888/gitee-hook
         events:
         - "Issue Hook"
